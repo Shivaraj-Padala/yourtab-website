@@ -83,19 +83,24 @@ export function Hero() {
 }
 
 const TRUST = [
-  { icon: UserOffIcon, text: 'No account' },
-  { icon: EyeOffIcon, text: 'No tracking' },
-  { icon: HeartIcon, text: 'Free' },
+  { icon: UserOffIcon, title: 'No account', text: 'Nothing to sign up for. Install it and open a tab.' },
+  { icon: EyeOffIcon, title: 'No tracking', text: 'No analytics, no cookies. Nobody follows your clicks.' },
+  { icon: HeartIcon, title: 'Free', text: 'Every feature, no paid version, nothing to unlock.' },
 ]
 
 export function TrustStrip() {
   return (
     <section className="trust" aria-label="At a glance">
       <ul className="wrap trust-list">
-        {TRUST.map(({ icon: Icon, text }) => (
-          <li key={text}>
-            <Icon size={19} />
-            {text}
+        {TRUST.map(({ icon: Icon, title, text }, i) => (
+          <li key={title} className="trust-card reveal" style={{ transitionDelay: `${i * 90}ms` }}>
+            <span className="trust-icon" aria-hidden="true">
+              <Icon size={22} />
+            </span>
+            <span className="trust-copy">
+              <strong>{title}</strong>
+              <span>{text}</span>
+            </span>
           </li>
         ))}
       </ul>

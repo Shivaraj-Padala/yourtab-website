@@ -24,12 +24,43 @@
 .statement {
   padding-block: var(--section) 0;
 }
-.statement-text {
-  font-size: clamp(3.2rem, 1rem + 9vw, 9rem);
+.statement-list {
+  list-style: none;
+  margin-block: 0;
+}
+.statement-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 24rem);
+  align-items: end;
+  gap: 12px 48px;
+  padding-block: clamp(16px, 2.4vw, 28px);
+  border-top: 1px solid var(--line);
+}
+.statement-row:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.statement-word {
+  justify-self: start;
+  font-size: clamp(3rem, 1rem + 7.5vw, 8rem);
   font-weight: 680;
   line-height: 1;
   letter-spacing: -0.045em;
-  text-align: center;
+}
+.statement-line {
+  margin: 0;
+  padding-bottom: 0.9em;
+  color: var(--muted);
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.2rem);
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+@media (max-width: 720px) {
+  .statement-row {
+    grid-template-columns: 1fr;
+  }
+  .statement-line {
+    padding-bottom: 0;
+  }
 }
 .lit {
   position: relative;
@@ -216,7 +247,7 @@
   /* ───────── The statement follows the scroll ───────── */
   @supports (animation-timeline: view()) {
     .statement {
-      height: 220vh;
+      height: 180vh;
       padding: 0;
       view-timeline-name: --statement;
     }
@@ -227,8 +258,14 @@
       align-items: center;
       height: 100vh;
     }
-    .statement-text {
+    .statement-list {
       width: 100%;
+    }
+    /* each line rises in with its word */
+    .statement-line {
+      animation: line-on linear both;
+      animation-timeline: --statement;
+      animation-range: contain var(--from) contain var(--to);
     }
     /* each word starts dim and its lit copy fades in over it (opacity only) */
     .lit,
@@ -263,6 +300,12 @@
   animation-play-state: paused !important;
 }
 
+@keyframes line-on {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
 @keyframes fade-in {
   from {
     opacity: 0;

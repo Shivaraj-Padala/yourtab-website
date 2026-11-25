@@ -194,45 +194,64 @@
 }
 /* ───────── Trust strip ───────── */
 .trust {
-  border-block: 1px solid var(--line);
-  background: color-mix(in oklab, var(--surface) 60%, transparent);
+  padding-block: clamp(24px, 4vw, 48px) 0;
 }
 .trust-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.trust-card {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px 0;
-  padding-block: 22px;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background:
+    radial-gradient(120% 140% at 0% 0%, var(--accent-soft), transparent 55%),
+    var(--surface);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
 }
-.trust-list li {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+.trust-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--brand);
+  color: #fff;
+  box-shadow:
+    0 6px 18px -6px color-mix(in oklab, var(--accent) 70%, transparent),
+    inset 0 1px 0 rgb(255 255 255 / 0.3);
+}
+.trust-copy {
+  display: grid;
+  gap: 4px;
+  padding-top: 1px;
+}
+.trust-copy strong {
   color: var(--text);
-  font-size: 16px;
-  font-weight: 540;
+  font-size: 17px;
+  font-weight: 640;
+  letter-spacing: -0.01em;
 }
-.trust-list svg {
-  color: var(--accent-ink);
+.trust-copy span {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.45;
+  text-wrap: pretty;
 }
-.trust-list li + li::before {
-  content: '';
-  width: 5px;
-  height: 5px;
-  margin-inline: clamp(16px, 3.5vw, 40px);
-  border-radius: 50%;
-  background: var(--line-2);
-}
-@media (max-width: 560px) {
+@media (max-width: 860px) {
   .trust-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
-    gap: 14px 16px;
-    max-width: 360px;
+    grid-template-columns: 1fr;
+    max-width: 520px;
   }
-  .trust-list li + li::before {
-    display: none;
+  .trust-card {
+    padding: 18px 20px;
   }
 }
 
