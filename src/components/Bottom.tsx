@@ -1,4 +1,4 @@
-import { CHROME_WEB_STORE_URL, FIREFOX_ADDONS_URL, GITHUB_URL, PRIVACY_URL } from '../config'
+import { asset, CHROME_WEB_STORE_URL, FIREFOX_ADDONS_URL, GITHUB_URL, PRIVACY_URL } from '../config'
 import { ChartOffIcon, CloudIcon, DeviceIcon, GithubIcon, HeartIcon, KeyIcon, SearchIcon } from './Icons'
 import { AddButton, OtherStore } from './Install'
 
@@ -175,7 +175,7 @@ export function FinalCta() {
     <section className="final" aria-labelledby="final-title">
       <div className="wrap">
         <div className="final-card reveal-zoom">
-          <img className="final-logo" src="/logo.svg" alt="" width="104" height="104" />
+          <img className="final-logo" src={asset('logo.svg')} alt="" width="104" height="104" />
           <h2 className="h2" id="final-title">
             Make every new tab <span className="grad-text">feel like home.</span>
           </h2>
@@ -199,7 +199,7 @@ export function Footer() {
     <footer className="footer">
       <div className="wrap footer-inner">
         <p className="footer-brand">
-          <img src="/favicon.svg" alt="" width="20" height="20" />
+          <img src={asset('favicon.svg')} alt="" width="20" height="20" />
           <span>© {YEAR} YourTab</span>
           <span className="made-with">
             Made with

@@ -15,6 +15,8 @@ pnpm lint
 
 `dist/` is a static site: upload it to any static host.
 
+**Hosting on GitHub Pages.** `.github/workflows/deploy.yml` builds and publishes on every push to `main`. One-time: repo Settings → Pages → Source: "GitHub Actions". It sets `BASE=/<repo>/` so the site works under `https://<user>.github.io/<repo>/`; on a custom domain at the root, leave `BASE` unset.
+
 ## Before launch
 
 Replace the placeholders in [`src/config.ts`](src/config.ts):

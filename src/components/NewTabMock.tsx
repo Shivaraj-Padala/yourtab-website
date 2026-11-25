@@ -4,6 +4,7 @@
 // clock and the Face. The page is laid out at the size of a 1280 × 760 window and scaled down as
 // one piece, so every value in mock.css matches the extension's (see --px there).
 import { useEffect, useId, useRef, useState, type CSSProperties } from 'react'
+import { asset } from '../config'
 import { contrast, ensureContrast, MOCK_SURFACE } from '../lib/color'
 import { fontFamily } from '../lib/fonts'
 import { textWidth } from '../lib/flyingKeys'
@@ -218,7 +219,7 @@ export function NewTabMock({ settings, intro = false, feedDemo = false, label, c
             <i />
           </span>
           <span className="mock-tab">
-            <img src="/favicon.svg" alt="" width="16" height="16" />
+            <img src={asset('favicon.svg')} alt="" width="16" height="16" />
             <span>YourTab</span>
             <svg className="mock-tab-x" viewBox="0 0 10 10">
               <path d="M2.5 2.5l5 5M7.5 2.5l-5 5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />

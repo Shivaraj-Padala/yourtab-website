@@ -1,5 +1,6 @@
 // YourTab's wallpapers, ported from the extension (src/app/settings/background.ts and schema.ts):
 // the curated gradients with their exact CSS, the plain colors, the Default gradient and video.
+import { asset } from '../config'
 import { luminance } from './color'
 
 export interface GradientDef {
@@ -111,7 +112,7 @@ export const PLAIN = { light: '#ffffff', dark: '#202124' }
 /** Every wallpaper the demo can show. */
 export type WallpaperId = 'default' | 'plain' | 'video' | GradientId | (typeof PLAIN_COLORS)[number]['id']
 
-export const VIDEO = { src: '/media/wallpaper.webm', poster: '/media/wallpaper-poster.jpg', name: 'Video' }
+export const VIDEO = { src: asset('media/wallpaper.webm'), poster: asset('media/wallpaper-poster.jpg'), name: 'Video' }
 
 /**
  * How text sits on a wallpaper: 'theme' follows light / dark, 'plain' is the plain wallpaper

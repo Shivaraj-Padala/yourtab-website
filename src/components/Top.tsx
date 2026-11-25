@@ -1,3 +1,4 @@
+import { asset } from '../config'
 import { Fragment, type CSSProperties } from 'react'
 import { ArrowDownIcon, EyeOffIcon, HeartIcon, UserOffIcon } from './Icons'
 import { AddButton } from './Install'
@@ -9,7 +10,7 @@ export function Nav() {
     <header className="nav">
       <nav className="nav-inner wrap" aria-label="Main">
         <a className="brand" href="#top" aria-label="YourTab, back to top">
-          <img src="/logo.svg" alt="" width="30" height="30" />
+          <img src={asset('logo.svg')} alt="" width="30" height="30" />
           <span>YourTab</span>
         </a>
         <ul className="nav-links">
@@ -36,7 +37,7 @@ function HeroBadge() {
   const browser = useBrowser()
   return (
     <p className="hero-badge">
-      <img src="/favicon.svg" alt="" width="16" height="16" />
+      <img src={asset('favicon.svg')} alt="" width="16" height="16" />
       {browser.store ? `A new tab page for ${browser.name}` : 'A new tab page for Chrome and Firefox'}
     </p>
   )
