@@ -1,4 +1,4 @@
-// Flying keys, ported from the extension (src/app/widgets/flyingKeys.ts): every key typed in the
+// Flying keys, ported from the extension (src/features/search/lib/flying-keys.ts): every key typed in the
 // search bar pops out of its top edge as a little keycap, arcs up, tumbles, and fades before it
 // can fall back down. With the Face on, the keys arc into its mouth instead, and it eats them.
 // Here the keys live inside a "layer" element (a tile, the mock page) instead of the whole page,

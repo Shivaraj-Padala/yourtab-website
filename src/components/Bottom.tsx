@@ -23,7 +23,7 @@ const POINTS = [
   {
     icon: SearchIcon,
     title: 'One request, on your terms',
-    text: 'Search suggestions go to the engine you picked, without cookies. Turn them off and nothing is sent.',
+    text: 'Search suggestions are off until you turn them on. Then what you type goes to the engine you picked, without cookies.',
   },
 ]
 
@@ -53,7 +53,7 @@ export function Privacy() {
             </span>
           </div>
           <div className="flow-line">
-            <span>Search suggestions · no cookies</span>
+            <span>Opt-in suggestions · no cookies</span>
           </div>
           <div className="flow-box flow-box--engine">
             <span className="flow-title">
@@ -100,8 +100,8 @@ const FAQ = [
     q: 'Where is my data stored?',
     a: (
       <p>
-        In your browser, on your device. Your settings, notes, to-dos and wallpapers never leave it. When you type in search with
-        suggestions on, that text goes to the search engine you chose, without cookies, so it can suggest results.
+        In your browser, on your device. Your settings, notes, to-dos and wallpapers never leave it. If you turn on search
+        suggestions, what you type in search goes to the search engine you chose, without cookies, so it can suggest results.
       </p>
     ),
   },
@@ -125,8 +125,8 @@ const FAQ = [
     q: 'Can I use my own search engine?',
     a: (
       <p>
-        You can choose the engine YourTab searches with: Google, Bing, Brave Search or DuckDuckGo. Suggestions come from the one you
-        pick, and you can turn them off.
+        You can choose the engine YourTab searches with: Google, Bing, Brave Search or DuckDuckGo. Suggestions from it are off
+        until you turn them on.
       </p>
     ),
   },
@@ -136,7 +136,7 @@ const FAQ = [
       <p>
         Right-click the YourTab icon in your toolbar and choose <strong>Remove from Chrome</strong>, or open{' '}
         <code>chrome://extensions</code> and click <strong>Remove</strong>. Your new tab goes back to the default, and everything
-        YourTab stored is removed with it.
+        YourTab stored is removed with it. To start over without removing it, use <strong>Settings → Reset YourTab</strong>.
       </p>
     ),
   },

@@ -40,7 +40,7 @@ export interface MockSettings {
   face: boolean
 }
 
-/** A fresh install (settings/schema.ts DEFAULT_SETTINGS). */
+/** A fresh install (features/settings/store/schema.ts DEFAULT_SETTINGS). */
 export const DEFAULT_MOCK: MockSettings = {
   theme: 'auto',
   accent: '#fb542b',

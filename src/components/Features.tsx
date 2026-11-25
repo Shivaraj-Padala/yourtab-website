@@ -189,7 +189,7 @@ export function Features() {
               </div>
               <div>
                 <dt>Suggestions</dt>
-                <dd>Live from Google, Bing, Brave or DuckDuckGo</dd>
+                <dd>Live from Google, Bing, Brave or DuckDuckGo, once you turn them on</dd>
               </div>
             </dl>
           </Tile>

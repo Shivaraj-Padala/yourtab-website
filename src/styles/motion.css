@@ -132,7 +132,7 @@
   .mock--intro .dt-shimmer .nt-dt-text {
     animation-delay: 2.4s;
   }
-  /* the dock slides up from the bottom (shortcuts.css: dock-in) */
+  /* the dock slides up from the bottom (dock.css: dock-in) */
   .mock--intro .nt-dock {
     animation: dock-in 0.6s 1.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
   }
@@ -341,7 +341,7 @@
     opacity: 1;
   }
 }
-/* the extension's own: the page rises in (App.css) */
+/* the extension's own: the page rises in (app.css) */
 @keyframes nt-rise {
   from {
     opacity: 0;
@@ -357,7 +357,7 @@
     transform: translateY(calc(6 * var(--px)));
   }
 }
-/* the extension's own: a new shortcut springs in with a wobble (shortcuts.css) */
+/* the extension's own: a new shortcut springs in with a wobble (grid.css) */
 @keyframes tile-arrive {
   0% {
     opacity: 0;

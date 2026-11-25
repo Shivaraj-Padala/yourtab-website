@@ -7,7 +7,7 @@ import { MoonIcon, SunIcon } from './Icons'
 import { DEFAULT_MOCK, PALETTES, type DisplayStyle, type MockSettings, type PaletteId } from '../lib/mock'
 import { NewTabMock } from './NewTabMock'
 
-// YourTab's suggested accents (settings/schema.ts ACCENTS)
+// YourTab's suggested accents (features/settings/store/schema.ts ACCENTS)
 const ACCENTS = [
   { name: 'Crimson', color: '#e5484d' },
   { name: 'Orange', color: '#fb542b' },

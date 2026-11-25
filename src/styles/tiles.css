@@ -517,7 +517,7 @@
   font-weight: 560;
 }
 
-/* ───────── Flying keys (the extension's flyingKeys.css) ─────────
+/* ───────── Flying keys (the extension's flying-keys.css) ─────────
    Keycaps that pop out of the search bar as you type; --face tints them with the accent. */
 .fly-key {
   position: absolute;

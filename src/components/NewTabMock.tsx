@@ -1,5 +1,6 @@
 // YourTab's new tab page inside a browser window, rebuilt in HTML/CSS from the extension's own
-// styles (src/app/App.css, glass.css, shortcuts.css, display.css, background.ts) and driven by the
+// styles (src/app/styles/app.css and glass.css, features/shortcuts/styles/grid.css and dock.css,
+// features/display-text/styles/display.css, features/wallpaper/lib/background.ts) and driven by the
 // same settings: wallpaper, theme, accent, glass, font, grid or dock, icon shape, Display Text,
 // clock and the Face. The page is laid out at the size of a 1280 × 760 window and scaled down as
 // one piece, so every value in mock.css matches the extension's (see --px there).

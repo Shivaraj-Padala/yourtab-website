@@ -1,5 +1,6 @@
-// YourTab's wallpapers, ported from the extension (src/app/settings/background.ts and schema.ts):
-// the curated gradients with their exact CSS, the plain colors, the Default gradient and video.
+// YourTab's wallpapers, ported from the extension (src/features/wallpaper/lib/background.ts and
+// src/features/settings/store/schema.ts): the curated gradients with their exact CSS, the plain
+// colors, the Default gradient and video.
 import { asset } from '../config'
 import { luminance } from './color'
 

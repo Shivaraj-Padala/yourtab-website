@@ -1,4 +1,4 @@
-// A small port of YourTab's color engine (src/app/settings/color.ts in the extension):
+// A small port of YourTab's color engine (src/lib/color.ts in the extension):
 // any accent gets a shade of the same hue that stays readable on the surface behind it.
 
 type Rgb = [number, number, number]
@@ -92,5 +92,5 @@ export function ensureContrast(hex: string, surface: string, ratio: number): str
   return at(pass)
 }
 
-/** YourTab's plain wallpaper in each theme (PLAIN in the extension's settings/background.ts). */
+/** YourTab's plain wallpaper in each theme (PLAIN in the extension's wallpaper/lib/background.ts). */
 export const MOCK_SURFACE = { light: '#ffffff', dark: '#202124' } as const

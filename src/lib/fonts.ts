@@ -1,4 +1,4 @@
-// The typefaces YourTab offers (src/app/settings/fonts.ts in the extension). The page only ships
+// The typefaces YourTab offers (src/features/settings/lib/fonts.ts in the extension). The page only ships
 // Geist; the others load the first time someone picks them in the playground.
 const SYSTEM = "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
 

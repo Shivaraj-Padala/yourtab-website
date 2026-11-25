@@ -61,7 +61,7 @@ src/
   lib/browser.ts         which browser is visiting, and where it installs from
   lib/flyingKeys.ts      the extension's flying keys (and the Face eating them), ported
   lib/typingDemo.ts      types into a demo search bar, launching a key per keystroke
-  lib/arcade/            the extension's six games, copied as-is (keep in sync with src/app/widgets/arcade)
+  lib/arcade/            the extension's six games, copied as-is (keep in sync with src/features/arcade/games)
   lib/motion.ts          reveals sections as they scroll into view; pauses off-screen loops
   styles/                base tokens, sections, the mock, the bento illustrations
   entry-server.tsx       renders the page to HTML at build time
@@ -78,8 +78,9 @@ public/
 decoration, `--accent-ink` for orange text, and `--accent-fill` behind white text. The demo
 derives a readable text shade for any accent, the same way the extension does.
 
-**The mock new tab page** copies the extension's defaults and values from `src/app/App.css`,
-`glass.css`, `shortcuts.css` and `display.css`. It's laid out as a 1280 px window and scaled with
+**The mock new tab page** copies the extension's defaults and values from `src/app/styles/app.css`
+and `glass.css`, `src/features/shortcuts/styles/grid.css` and `dock.css`, and
+`src/features/display-text/styles/display.css`. It's laid out as a 1280 px window and scaled with
 container units (`--px` in `styles/mock.css`), so pixel values can be copied straight across. If
 the extension's look changes, update `NewTabMock.tsx` and `mock.css` to match.
 

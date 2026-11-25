@@ -37,7 +37,7 @@
   color-scheme: dark;
 }
 
-/* ───────── Text over the wallpaper (App.css: .tone-*) ───────── */
+/* ───────── Text over the wallpaper (app.css: .tone-*) ───────── */
 /* the Default gradient: the theme's own colors */
 .mock[data-tone='theme'] {
   --fg: light-dark(#1a1a1f, #ececf1);
@@ -209,7 +209,7 @@
   inset: 0;
   background: var(--bg);
 }
-/* the Default gradient: a soft accent glow and a faint dot grid (App.css .bg-ambient) */
+/* the Default gradient: a soft accent glow and a faint dot grid (app.css .bg-ambient) */
 .mock[data-wallpaper='default'] .nt-bg {
   background:
     radial-gradient(60% 50% at 50% -10%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 70%),
