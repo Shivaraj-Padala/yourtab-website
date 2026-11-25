@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- YourTab: your new tab page in three pieces: search, clock and a shortcut -->
+  <defs>
+    <linearGradient id="yt-bg" x1="8" y1="0" x2="120" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8a3d"/>
+      <stop offset=".5" stop-color="#fb542b"/>
+      <stop offset="1" stop-color="#e5245a"/>
+    </linearGradient>
+    <radialGradient id="yt-hi" cx="28" cy="6" r="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset=".6" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="yt-solid" x1="0" y1="28" x2="0" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff0e8"/>
+    </linearGradient>
+    <linearGradient id="yt-soft" x1="0" y1="60" x2="0" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".56"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".4"/>
+    </linearGradient>
+    <filter id="yt-lift" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="url(#yt-bg)"/>
+  <rect width="128" height="128" rx="30" fill="url(#yt-hi)"/>
+  <g fill="#7a0f2e" opacity=".3" transform="translate(0 3)" filter="url(#yt-lift)">
+    <rect x="24" y="28" width="80" height="24" rx="12"/>
+    <circle cx="42" cy="78" r="19"/>
+  </g>
+  <!-- search -->
+  <rect x="24" y="28" width="80" height="24" rx="12" fill="url(#yt-solid)"/>
+  <!-- clock (r 19: one unit of optical overshoot, so it looks as big as the 36 square) -->
+  <circle cx="42" cy="78" r="19" fill="url(#yt-solid)"/>
+  <!-- a shortcut -->
+  <rect x="68" y="60" width="36" height="36" rx="11" fill="url(#yt-soft)"/>
+</svg>

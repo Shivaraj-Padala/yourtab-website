@@ -1,0 +1,86 @@
+<!doctype html>
+<!-- Source of public/og.png (1200 × 630). Open it at exactly 1200 × 630 and take a screenshot;
+     see README → "Social image". -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @font-face {
+        font-family: 'Geist';
+        src: url('../node_modules/@fontsource-variable/geist/files/geist-latin-wght-normal.woff2') format('woff2');
+        font-weight: 100 900;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+      }
+      body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        padding: 0 96px;
+        box-sizing: border-box;
+        background:
+          radial-gradient(70% 90% at 12% 0%, rgb(255 255 255 / 0.22), transparent 60%),
+          radial-gradient(60% 80% at 100% 100%, rgb(120 10 40 / 0.35), transparent 70%),
+          linear-gradient(135deg, #ff8a3d 0%, #fb542b 50%, #e5245a 100%);
+        color: #fff;
+        font-family: 'Geist', system-ui, sans-serif;
+      }
+      body::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(rgb(255 255 255 / 0.16) 1.2px, transparent 1.6px);
+        background-size: 28px 28px;
+        mask-image: radial-gradient(80% 80% at 30% 50%, #000, transparent 80%);
+      }
+      .logo {
+        position: relative;
+        flex: none;
+        width: 260px;
+        height: 260px;
+        border-radius: 62px;
+        box-shadow:
+          0 0 0 10px rgb(255 255 255 / 0.18),
+          0 40px 80px -20px rgb(90 10 30 / 0.6);
+      }
+      .copy {
+        position: relative;
+      }
+      .name {
+        margin: 0 0 18px;
+        font-size: 34px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        opacity: 0.92;
+      }
+      h1 {
+        margin: 0;
+        font-size: 84px;
+        font-weight: 680;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        text-shadow: 0 2px 24px rgb(110 10 30 / 0.25);
+      }
+      .sub {
+        margin: 26px 0 0;
+        font-size: 28px;
+        font-weight: 500;
+        opacity: 0.95;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="../public/logo.svg" alt="" />
+    <div class="copy">
+      <p class="name">YourTab</p>
+      <h1>Make every new tab feel like home.</h1>
+      <p class="sub">No account. No tracking. Free.</p>
+    </div>
+  </body>
+</html>

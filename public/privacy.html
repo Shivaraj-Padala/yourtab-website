@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy — YourTab</title>
+    <meta name="description" content="How YourTab handles your data: everything stays in your browser. No account, no analytics, no tracking." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="color-scheme" content="light dark" />
+    <style>
+      :root {
+        --bg: #fbfaf8;
+        --surface: #ffffff;
+        --text: #16161a;
+        --muted: #5c5c66;
+        --line: rgb(22 22 26 / 0.1);
+        --ink: #c4380f;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0b0b0d;
+          --surface: #141417;
+          --text: #f3f3f5;
+          --muted: #a5a5ae;
+          --line: rgb(255 255 255 / 0.1);
+          --ink: #ff7a52;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 17px/1.7 ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 56px 24px 96px;
+      }
+      a {
+        color: var(--ink);
+        text-underline-offset: 3px;
+      }
+      a:focus-visible {
+        outline: 2.5px solid var(--ink);
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+      .back {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--text);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .back img {
+        width: 28px;
+        height: 28px;
+      }
+      h1 {
+        margin: 48px 0 8px;
+        font-size: clamp(2rem, 1.4rem + 2.5vw, 2.75rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+      }
+      h2 {
+        margin: 40px 0 8px;
+        font-size: 1.25rem;
+        letter-spacing: -0.015em;
+      }
+      p,
+      ul {
+        margin: 0 0 14px;
+        color: var(--muted);
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      strong {
+        color: var(--text);
+      }
+      code {
+        font: 0.9em ui-monospace, Menlo, monospace;
+        color: var(--text);
+      }
+      .summary {
+        margin: 32px 0;
+        padding: 20px 24px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--surface);
+      }
+      .summary p {
+        margin: 0;
+        color: var(--text);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="/"><img src="/logo.svg" alt="" />YourTab</a>
+
+      <h1>Privacy policy</h1>
+      <p>YourTab is a new tab page for your browser. This page explains what it does with your data.</p>
+
+      <div class="summary">
+        <p>
+          <strong>In short:</strong> everything stays in your browser. There is no account, no analytics and no tracking. The only
+          thing YourTab sends anywhere is what you type in search, to the search engine you chose, so it can suggest results.
+        </p>
+      </div>
+
+      <h2>What YourTab stores</h2>
+      <p>YourTab saves these things in your browser's own storage, on your device:</p>
+      <ul>
+        <li>Your settings, such as colors, wallpaper, clock, shortcuts and search engine</li>
+        <li>Your notes and to-dos</li>
+        <li>Wallpaper images or videos you add</li>
+      </ul>
+      <p>None of it is sent to us or to anyone else. We don't run any servers that receive your data.</p>
+
+      <h2>What YourTab sends</h2>
+      <p>
+        When search suggestions are on, the text you type in the search bar is sent to the search engine you picked (Google, Bing,
+        Brave Search or DuckDuckGo) to get suggestions. The request is sent without cookies. That search engine's own privacy
+        policy applies to it. You can turn suggestions off in Settings, and then YourTab sends nothing.
+      </p>
+      <p>When you run a search or open a shortcut, your browser goes to that website, just as if you had typed the address.</p>
+
+      <h2>What YourTab doesn't do</h2>
+      <ul>
+        <li>No account or sign-in</li>
+        <li>No analytics, telemetry or crash reporting</li>
+        <li>No ads and no tracking</li>
+        <li>No selling or sharing of data, because we don't collect any</li>
+      </ul>
+
+      <h2>Permissions</h2>
+      <p>
+        YourTab asks for the <code>favicon</code> permission to show website icons on your shortcuts, using the icons your browser
+        already has. It also asks to contact the four search engines above, only to fetch search suggestions.
+      </p>
+
+      <h2>Removing your data</h2>
+      <p>
+        Removing YourTab from your browser deletes everything it stored. You can also delete notes, to-dos and wallpapers inside
+        YourTab at any time.
+      </p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be posted on this page.</p>
+    </main>
+  </body>
+</html>
